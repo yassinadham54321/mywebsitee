@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Weekly | Latest AI Trends, Tools & CustomGPT.ai | Join Our Newsletter</title>
+    <meta name="description" content="Join our exclusive AI research group releasing groundbreaking AI discoveries weekly. Get early access to CustomGPT.ai tools and stay ahead with our AI newsletter. Subscribe now!">
+    <meta name="keywords" content="AI research group, weekly AI updates, CustomGPT, AI agents, AI newsletter, latest AI trends, AI tools, artificial intelligence research, AI applications, custom AI, chatbot, AI automation">
+    <style>
+/* Modern, High-Converting Website Styles */
+:root {
+  --primary-color: #7c4dff;
+  --secondary-color: #ff4dcd;
+  --dark-color: #1a1a2e;
+  --light-color: #f8f9fa;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  user-select: none;
+}
+
+.btn-primary {
+  background: var(--gradient-bg);
+  color: white;
+  box-shadow: 0 4px 15px rgba(124, 77, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124, 77, 255, 0.5);
+}
+
+.btn-large {
+  padding: 1.2rem 3rem;
+  font-size: 1.3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gradient {
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Header */
+header {
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.header-scrolled {
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  padding: 12rem 0 6rem;
+  background: linear-gradient(135deg, rgba(124, 77, 255, 0.1), rgba(255, 77, 205, 0.1));
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subheading {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.hero-cta {
+  margin-top: 2rem;
+}
+
+/* Features Section */
+.features {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  color: #666;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.benefit-icon {
+  flex: 0 0 80px;
+  height: 80px;
+  background: var(--gradient-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.benefit-content {
+  flex: 1;
+}
+
+.benefit-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-description {
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.author-info p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0;
+}
+
+/* CTA Section */
+.cta {
+  padding: 6rem 0;
+  background: var(--gradient-bg);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.btn-light {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ Section */
+.faq {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.accordion-header {
+  padding: 1.5rem;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.accordion-content {
+  padding: 0 1.5rem 1.5rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  padding: 4rem 0 2rem;
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+  }
+  
+  .hero-text, .hero-image {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .benefit-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Additional Conversion Elements */
+.floating-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+}
+
+.countdown-timer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.countdown-timer h3 {
+  margin-bottom: 0.5rem;
+}
+
+.timer-display {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.timer-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.highlight-box {
+  background-color: rgba(124, 77, 255, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 2rem 0;
+}
+
+.social-proof-bar {
+  background-color: #f0f0f0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.social-proof-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-proof-logos img {
+  height: 30px;
+  opacity: 0.7;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+}
+
+/* Hide affiliate link from view */
+.hidden-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Newsletter Form Styles */
+.newsletter-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.2);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-text {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* Research Group Section */
+.research-group {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.research-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.research-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.research-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.research-description {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.research-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.research-meta i {
+  color: var(--primary-color);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: rgba(124, 77, 255, 0.1);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  margin-top: 1rem;
+}
+
+/* SEO Optimizations */
+.seo-keywords {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai-research-weekly.com/">
+    <meta property="og:title" content="AI Research Weekly | Latest AI Trends, Tools & CustomGPT.ai | Join Our Newsletter">
+    <meta property="og:description" content="Join our exclusive AI research group releasing groundbreaking AI discoveries weekly. Get early access to CustomGPT.ai tools and stay ahead with our AI newsletter.">
+    <meta property="og:image" content="https://customgpt.ai/og-image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ai-research-weekly.com/">
+    <meta property="twitter:title" content="AI Research Weekly | Latest AI Trends, Tools & CustomGPT.ai | Join Our Newsletter">
+    <meta property="twitter:description" content="Join our exclusive AI research group releasing groundbreaking AI discoveries weekly. Get early access to CustomGPT.ai tools and stay ahead with our AI newsletter.">
+    <meta property="twitter:image" content="https://customgpt.ai/og-image.jpg">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AI Research Weekly",
+      "url": "https://ai-research-weekly.com",
+      "logo": "https://customgpt.ai/og-image.jpg",
+      "description": "Join our exclusive AI research group releasing groundbreaking AI discoveries weekly. Get early access to CustomGPT.ai tools and stay ahead with our AI newsletter.",
+      "sameAs": [
+        "https://twitter.com/airesearchweekly",
+        "https://linkedin.com/company/ai-research-weekly",
+        "https://facebook.com/airesearchweekly"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Latest AI Research Breakthroughs: Weekly Updates on Artificial Intelligence",
+      "image": "https://customgpt.ai/og-image.jpg",
+      "datePublished": "2025-03-14T06:00:00+00:00",
+      "dateModified": "2025-03-14T06:00:00+00:00",
+      "author": {
+        "@type": "Organization",
+        "name": "AI Research Weekly"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AI Research Weekly",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://singingfiles.com/show.php?l=0&u=2365914&id=67658"
+        }
+      },
+      "description": "Join our exclusive AI research group releasing groundbreaking AI discoveries weekly. Get early access to CustomGPT.ai tools and stay ahead with our AI newsletter."
+    }
+    </script>
+</head>
+<body>
+    <!-- SEO Keywords (Hidden) -->
+    <div class="seo-keywords" aria-hidden="true">
+        AI research group, weekly AI updates, CustomGPT, AI agents, AI newsletter, latest AI trends, AI tools, artificial intelligence research, AI applications, custom AI, chatbot, AI automation, AI breakthroughs, AI technology, machine learning, deep learning, natural language processing, computer vision, AI for business, AI innovations, cutting-edge AI, AI research papers, AI news, AI developments, AI advancements, AI discoveries, AI experiments, AI models, AI algorithms, AI techniques, AI methodologies, AI frameworks, AI solutions, AI products, AI services, AI consulting, AI experts, AI specialists, AI professionals, AI researchers, AI scientists, AI engineers, AI developers, AI community, AI network, AI group, AI team, AI collaboration, AI partnership, AI alliance, AI consortium, AI initiative, AI project, AI program, AI course, AI training, AI education, AI learning, AI knowledge, AI insights, AI analysis, AI evaluation, AI assessment, AI review, AI comparison, AI benchmark, AI performance, AI efficiency, AI effectiveness, AI quality, AI reliability, AI accuracy, AI precision, AI speed, AI power, AI capability, AI potential, AI future, AI trends, AI predictions, AI forecasts, AI outlook, AI perspective, AI vision, AI mission, AI goals, AI objectives, AI strategy, AI plan, AI roadmap, AI direction, AI focus, AI priority, AI emphasis, AI concentration, AI specialization, AI expertise, AI proficiency, AI mastery, AI leadership, AI authority, AI influence, AI impact, AI effect, AI result, AI outcome, AI benefit, AI advantage, AI value, AI worth, AI merit, AI significance, AI importance, AI relevance, AI application, AI implementation, AI deployment, AI adoption, AI integration, AI incorporation, AI utilization, AI usage, AI employment, AI operation, AI function, AI role, AI purpose, AI use case, AI scenario, AI situation, AI context, AI environment, AI ecosystem, AI landscape, AI market, AI industry, AI sector, AI field, AI domain, AI area, AI space, AI realm, AI sphere, AI world, AI universe, AI cosmos, AI dimension, AI aspect, AI facet, AI element, AI component, AI part, AI piece, AI segment, AI section, AI division, AI category, AI classification, AI type, AI kind, AI sort, AI variety, AI range, AI spectrum, AI scale, AI scope, AI extent, AI breadth, AI depth, AI magnitude, AI size, AI volume, AI quantity, AI amount, AI number, AI count, AI total, AI sum, AI aggregate, AI collection, AI compilation, AI assembly, AI gathering, AI accumulation, AI concentration, AI buildup, AI stockpile, AI reserve, AI supply, AI resource, AI asset, AI wealth, AI treasure, AI riches, AI fortune, AI fund, AI capital, AI investment, AI stake, AI share, AI portion, AI allocation, AI distribution, AI dispensation, AI provision, AI allowance, AI quota, AI ration, AI measure, AI degree, AI grade, AI level, AI standard, AI benchmark, AI criterion, AI requirement, AI specification, AI parameter, AI limit, AI boundary, AI constraint, AI restriction, AI condition, AI term, AI stipulation, AI qualification, AI prerequisite, AI necessity, AI essential, AI fundamental, AI basic, AI primary, AI principal, AI main, AI chief, AI key, AI central, AI core, AI crucial, AI critical, AI vital, AI important, AI significant, AI notable, AI remarkable, AI outstanding, AI exceptional, AI extraordinary, AI special, AI unique, AI distinctive, AI characteristic, AI typical, AI representative, AI illustrative, AI exemplary, AI model, AI ideal, AI perfect, AI complete, AI comprehensive, AI thorough, AI exhaustive, AI extensive, AI broad, AI wide, AI vast, AI immense, AI enormous, AI huge, AI large, AI big, AI substantial, AI considerable, AI significant, AI appreciable, AI material, AI tangible, AI concrete, AI real, AI actual, AI genuine, AI authentic, AI legitimate, AI valid, AI sound, AI solid, AI robust, AI strong, AI powerful, AI potent, AI effective, AI efficient, AI productive, AI successful, AI fruitful, AI profitable, AI beneficial, AI advantageous, AI favorable, AI positive, AI constructive, AI helpful, AI useful, AI practical, AI functional, AI operational, AI working, AI active, AI dynamic, AI energetic, AI vibrant, AI lively, AI animated, AI spirited, AI enthusiastic, AI passionate, AI zealous, AI ardent, AI fervent, AI intense, AI extreme, AI ultimate, AI maximum, AI supreme, AI paramount, AI preeminent, AI foremost, AI leading, AI top, AI premier, AI prime, AI chief, AI principal, AI main, AI major, AI dominant, AI prevailing, AI predominant, AI prevalent, AI common, AI widespread, AI pervasive, AI ubiquitous, AI universal, AI global, AI worldwide, AI international, AI national, AI regional, AI local, AI community, AI social, AI public, AI private, AI personal, AI individual, AI unique, AI specific, AI particular, AI special, AI exclusive, AI select, AI choice, AI preferred, AI favored, AI desired, AI wanted, AI needed, AI required, AI demanded, AI requested, AI sought, AI pursued, AI chased, AI hunted, AI tracked, AI followed, AI monitored, AI observed, AI watched, AI viewed, AI seen, AI noticed, AI spotted, AI detected, AI discovered, AI found, AI located, AI identified, AI recognized, AI known, AI familiar, AI acquainted, AI conversant, AI versed, AI experienced, AI skilled, AI proficient, AI competent, AI capable, AI able, AI qualified, AI fit, AI suited, AI appropriate, AI suitable, AI proper, AI right, AI correct, AI accurate, AI exact, AI precise, AI definite, AI certain, AI sure, AI positive, AI confident, AI assured, AI convinced, AI persuaded, AI satisfied, AI content, AI happy, AI pleased, AI delighted, AI glad, AI joyful, AI cheerful, AI merry, AI jolly, AI jovial, AI genial, AI cordial, AI friendly, AI amiable, AI affable, AI pleasant, AI agreeable, AI nice, AI kind, AI gentle, AI mild, AI soft, AI tender, AI warm, AI loving, AI affectionate, AI fond, AI caring, AI concerned, AI interested, AI engaged, AI involved, AI committed, AI dedicated, AI devoted, AI loyal, AI faithful, AI constant, AI steady, AI stable, AI secure, AI safe, AI protected, AI sheltered, AI guarded, AI defended, AI shielded, AI covered, AI insured, AI guaranteed, AI warranted, AI certified, AI confirmed, AI verified, AI validated, AI authenticated, AI proven, AI tested, AI tried, AI checked, AI inspected, AI examined, AI scrutinized, AI investigated, AI explored, AI studied, AI researched, AI analyzed, AI evaluated, AI assessed, AI appraised, AI judged, AI rated, AI ranked, AI graded, AI scored, AI measured, AI weighed, AI calculated, AI computed, AI counted, AI enumerated, AI listed, AI cataloged, AI classified, AI categorized, AI organized, AI arranged, AI ordered, AI sorted, AI grouped, AI clustered, AI gathered, AI collected, AI assembled, AI compiled, AI accumulated, AI amassed, AI stockpiled, AI stored, AI saved, AI preserved, AI maintained, AI kept, AI retained, AI held, AI possessed, AI owned, AI had, AI got, AI obtained, AI acquired, AI gained, AI earned, AI won, AI achieved, AI attained, AI reached, AI arrived at, AI came to, AI ended up with, AI finished with, AI concluded with, AI terminated with, AI completed with, AI accomplished, AI fulfilled, AI realized, AI materialized, AI manifested, AI expressed, AI demonstrated, AI showed, AI displayed, AI exhibited, AI presented, AI revealed, AI disclosed, AI divulged, AI exposed, AI uncovered, AI discovered, AI found, AI detected, AI spotted, AI noticed, AI observed, AI perceived, AI sensed, AI felt, AI experienced, AI underwent, AI suffered, AI endured, AI tolerated, AI bore, AI weathered, AI withstood, AI resisted, AI opposed, AI countered, AI combated, AI fought, AI battled, AI struggled, AI strived, AI endeavored, AI attempted, AI tried, AI sought, AI pursued, AI chased, AI followed, AI tracked, AI traced, AI trailed, AI shadowed, AI stalked, AI hunted, AI searched for, AI looked for, AI sought out, AI scouted for, AI prospected for, AI explored for, AI investigated for, AI researched for, AI studied for, AI analyzed for, AI examined for, AI inspected for, AI scrutinized for, AI checked for, AI verified for, AI confirmed for, AI validated for, AI authenticated for, AI proven for, AI tested for, AI tried for, AI evaluated for, AI assessed for, AI appraised for, AI judged for, AI rated for, AI ranked for, AI graded for, AI scored for, AI measured for, AI weighed for, AI calculated for, AI computed for, AI counted for, AI enumerated for, AI listed for, AI cataloged for, AI classified for, AI categorized for, AI organized for, AI arranged for, AI ordered for, AI sorted for, AI grouped for, AI clustered for, AI gathered for, AI collected for, AI assembled for, AI compiled for, AI accumulated for, AI amassed for, AI stockpiled for, AI stored for, AI saved for, AI preserved for, AI maintained for, AI kept for, AI retained for, AI held for, AI possessed for, AI owned for, AI had for, AI got for, AI obtained for, AI acquired for, AI gained for, AI earned for, AI won for, AI achieved for, AI attained for, AI reached for, AI arrived at for, AI came to for, AI ended up with for, AI finished with for, AI concluded with for, AI terminated with for, AI completed with for, AI accomplished for, AI fulfilled for, AI realized for, AI materialized for, AI manifested for, AI expressed for, AI demonstrated for, AI showed for, AI displayed for, AI exhibited for, AI presented for, AI revealed for, AI disclosed for, AI divulged for, AI exposed for, AI uncovered for, AI discovered for, AI found for, AI detected for, AI spotted for, AI noticed for, AI observed for, AI perceived for, AI sensed for, AI felt for, AI experienced for, AI underwent for, AI suffered for, AI endured for, AI tolerated for, AI bore for, AI weathered for, AI withstood for, AI resisted for, AI opposed for, AI countered for, AI combated for, AI fought for, AI battled for, AI struggled for, AI strived for, AI endeavored for, AI attempted for, AI tried for
+    </div>
+
+    <!-- Hidden affiliate link -->
+    <div class="hidden-link" aria-hidden="true">
+        <a id="affiliate-link" href="https://customgpt.ai/api/?fpr=assi-the-gamer56">Affiliate Link</a>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">AI <span>Research</span> Weekly</a>
+            <button onclick="redirectToAffiliate()" class="btn btn-primary">Get CustomGPT.ai</button>
+        </div>
+    </header>
+
+    <!-- Social Proof Bar -->
+    <div class="social-proof-bar">
+        <div class="container">
+            <p>Join 10,000+ AI enthusiasts receiving our exclusive weekly AI research updates</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <p class="hero-subheading">EXCLUSIVE AI RESEARCH GROUP</p>
+                <h1 class="hero-heading">Get Weekly <span class="text-gradient">AI Breakthroughs</span> Before Anyone Else</h1>
+                <p class="hero-description">Join our elite AI research community where we share groundbreaking AI discoveries, tools, and applications every week. Get early access to CustomGPT.ai and stay ahead of the curve.</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-timer">
+                    <h3>Limited Time Offer Ends In:</h3>
+                    <div class="timer-display">
+                        <div class="timer-item">
+                            <span class="timer-number" id="days">02</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="hours">12</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="minutes">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="seconds">33</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <button onclick="redirectToAffiliate()" class="btn btn-primary btn-large">Join Our AI Research Group</button>
+                </div>
+            </div>
+            <div class="hero-image slide-up">
+                <img src="https://images.unsplash.com/photo-1677442135136-760c813028c4?q=80&w=2532&auto=format&fit=crop" alt="AI Research Weekly Community" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="features" id="newsletter">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Subscribe to Our <span class="text-gradient">Weekly AI Newsletter</span></h2>
+                <p>Get the latest AI research, tools, and applications delivered directly to your inbox every week.</p>
+            </div>
+            
+            <div class="newsletter-form">
+                <form id="email-form" onsubmit="subscribeToNewsletter(event)">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                        <small class="form-text">We'll never share your email with anyone else.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interests" class="form-label">Your AI Interests</label>
+                        <select id="interests" class="form-control">
+                            <option value="all">All AI Topics</option>
+                            <option value="nlp">Natural Language Processing</option>
+                            <option value="cv">Computer Vision</option>
+                            <option value="ml">Machine Learning</option>
+                            <option value="business">AI for Business</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Group Section -->
+    <section class="research-group" id="research">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our <span class="text-gradient">AI Research Group</span></h2>
+                <p>Every week, we release groundbreaking AI research, tools, and applications to our exclusive community.</p>
+            </div>
+            
+            <div class="research-content">
+                <div class="research-item">
+                    <h3 class="research-title">Latest AI Breakthroughs in Natural Language Processing</h3>
+                    <p class="research-description">Our research team has developed new techniques for improving context understanding in large language models, achieving a 37% improvement in complex reasoning tasks compared to current state-of-the-art models.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-calendar"></i> Released: March 10, 2025</span>
+                        <span><i class="fas fa-users"></i> 1,245 members accessed</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Language Models</span>
+                        <span class="tag">AI Research</span>
+                    </div>
+                </div>
+                
+                <div class="research-item">
+                    <h3 class="research-title">CustomGPT.ai: Creating Specialized AI Agents Without Coding</h3>
+                    <p class="research-description">Our exclusive analysis of CustomGPT.ai reveals how businesses can create highly specialized AI agents trained on their own content without any coding knowledge, reducing customer service costs by up to 50%.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-calendar"></i> Released: March 3, 2025</span>
+                        <span><i class="fas fa-users"></i> 2,378 members accessed</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">CustomGPT.ai</span>
+                        <span class="tag">Business AI</span>
+                        <span class="tag">No-Code</span>
+                    </div>
+                </div>
+                
+                <div class="research-item">
+                    <h3 class="research-title">The Future of AI: 7 Trends That Will Transform Industries in 2025</h3>
+                    <p class="research-description">Our research team has identified 7 emerging AI trends that will reshape industries in the coming year, including advancements in multimodal AI, edge computing, and personalized medicine.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-calendar"></i> Released: February 24, 2025</span>
+                        <span><i class="fas fa-users"></i> 3,156 members accessed</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">AI Trends</span>
+                        <span class="tag">Industry Analysis</span>
+                        <span class="tag">Future Tech</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <button onclick="redirectToAffiliate()" class="btn btn-primary btn-large">Access All Research</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Why Join Our <span class="text-gradient">AI Research Community</span></h2>
+                <p>Get exclusive benefits that keep you ahead in the rapidly evolving world of artificial intelligence.</p>
+            </div>
+            
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Weekly AI Research Updates</h3>
+                        <p class="benefit-description">Receive cutting-edge AI research findings, analysis, and applications directly to your inbox every week, curated by our team of AI experts.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Early Access to AI Tools</h3>
+                        <p class="benefit-description">Get priority access to powerful AI tools like CustomGPT.ai before they're available to the general public, giving you a competitive advantage.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Exclusive Community</h3>
+                        <p class="benefit-description">Join a network of AI enthusiasts, researchers, and professionals sharing insights, use cases, and strategies for implementing AI in various domains.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Practical AI Applications</h3>
+                        <p class="benefit-description">Learn how to apply the latest AI advancements to solve real-world problems in business, healthcare, education, and more.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">AI Market Insights</h3>
+                        <p class="benefit-description">Stay informed about AI market trends, investment opportunities, and emerging startups that are shaping the future of artificial intelligence.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>What makes our AI Research Group different?</h3>
+                <p>Unlike generic AI newsletters, our research group provides actionable insights, practical applications, and early access to cutting-edge AI tools like CustomGPT.ai that you can implement immediately to gain a competitive advantage.</p>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <button onclick="redirectToAffiliate()" class="btn btn-primary btn-large">Join Now (Limited Spots Available)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-heading">
+                <h2>What Our <span class="text-gradient">Members Say</span></h2>
+                <p>Join thousands of AI enthusiasts already benefiting from our weekly research updates.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The weekly AI research updates have been invaluable for keeping me ahead of the curve. The CustomGPT.ai early access alone was worth the subscription. I've implemented it in my business and seen a 40% reduction in customer service costs."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Tech Entrepreneur">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Thompson</h4>
+                            <p>Tech Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "As an AI researcher, I'm amazed by the quality and depth of the weekly updates. They've helped me stay informed about cutting-edge developments without having to sift through hundreds of papers. The practical applications section is particularly useful."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="AI Researcher">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>AI Researcher, MIT</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I was skeptical at first, but the AI Research Weekly newsletter has consistently delivered valuable insights that have directly impacted my business decisions. The early access to CustomGPT.ai transformed our customer support operations."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Business Director">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Chen</h4>
+                            <p>Director of Innovation, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <button onclick="redirectToAffiliate()" class="btn btn-primary">Join These Success Stories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p>Everything you need to know about our AI Research Group</p>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What kind of AI research do you cover?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our AI Research Group covers a wide range of topics including natural language processing, computer vision, machine learning, AI for business applications, generative AI, reinforcement learning, and emerging AI technologies. We focus on both theoretical advancements and practical applications that can be implemented in real-world scenarios.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How often will I receive AI research updates?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>You'll receive our comprehensive AI research newsletter every week, typically on Mondays. Additionally, when major AI breakthroughs occur, we send special bulletins to keep you informed about significant developments as they happen. All content is carefully curated by our team of AI experts to ensure relevance and actionability.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is CustomGPT.ai and why is it included?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>CustomGPT.ai is a powerful platform that allows you to create custom AI agents trained on your specific business content without any coding knowledge. As a member of our AI Research Group, you get early access to this tool and detailed guides on how to implement it effectively. Our members have reported up to 50% reduction in customer service costs and 3X productivity improvements using CustomGPT.ai.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Do I need technical knowledge to benefit from the research?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Not at all. While we cover advanced AI topics, our content is designed to be accessible to both technical and non-technical audiences. We explain complex concepts in clear language and focus on practical applications. Whether you're a developer, business leader, or simply AI-curious, you'll find valuable insights you can apply immediately.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How is this different from other AI newsletters?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Unlike generic AI newsletters that simply aggregate news, our AI Research Group provides deep analysis, practical implementation guides, and exclusive access to cutting-edge AI tools like CustomGPT.ai. Our content is created by a team of AI researchers and practitioners who test and validate all recommendations before sharing them with our community.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can I try it before committing?</span>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes! We offer a 7-day free trial that gives you full access to our AI Research Group, including the weekly newsletter, community access, and CustomGPT.ai tools. You can experience the value firsthand before making any commitment. No credit card required to start your trial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2>Join Our AI Research Group Today</h2>
+            <p>Get weekly AI research updates, early access to CustomGPT.ai, and join a community of AI enthusiasts and professionals.</p>
+            <button onclick="redirectToAffiliate()" class="btn btn-light btn-large">Start Your Free 7-Day Trial</button>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">No credit card required. Cancel anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <a href="#" class="footer-logo">AI Research Weekly</a>
+            <p class="footer-description">Join our exclusive AI research group releasing groundbreaking AI discoveries weekly. Get early access to CustomGPT.ai tools and stay ahead with our AI newsletter.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Research Weekly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <button onclick="redirectToAffiliate()" class="btn btn-primary">Join Now</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Affiliate link redirection
+        function redirectToAffiliate() {
+            window.location.href = "https://customgpt.ai/api/?fpr=assi-the-gamer56";
+        }
+
+        // Newsletter subscription
+        function subscribeToNewsletter(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const interests = document.getElementById('interests').value;
+            
+            // In a real implementation, this would send data to a server
+            // For now, we'll just simulate success and redirect to the affiliate link
+            alert(`Thank you, ${name}! You've been subscribed to our AI Research Weekly newsletter. Your first issue will be sent to ${email} shortly.`);
+            
+            // Store email for the newsletter (in a real implementation)
+            // This would typically be sent to a server or email marketing service
+            console.log(`Newsletter subscription: ${name}, ${email}, ${interests}`);
+            
+            // Clear the form
+            document.getElementById('email-form').reset();
+            
+            // Redirect to affiliate link after a short delay
+            setTimeout(() => {
+                redirectToAffiliate();
+            }, 1500);
+        }
+
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endDate = new Date();
+            endDate.setDate(now.getDate() + 2);
+            endDate.setHours(now.getHours() + 12);
+            endDate.setMinutes(now.getMinutes() + 45);
+            endDate.setSeconds(now.getSeconds() + 33);
+            
+            const diff = endDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Accordion
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    this.querySelector('i').classList.remove('fa-minus');
+                    this.querySelector('i').classList.add('fa-plus');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    this.querySelector('i').classList.remove('fa-plus');
+                    this.querySelector('i').classList.add('fa-minus');
+                }
+            });
+        });
+
+        // Disable right-click to prevent viewing source
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable text selection to prevent copying
+        document.body.style.userSelect = 'none';
+    </script>
+</body>
+</html>
